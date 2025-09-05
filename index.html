@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars Helpers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Handlebars Helpers</h1>
+        <input type="text" id="search" placeholder="Search for helpers...">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#conditional-helpers">Conditional Helpers</a></li>
+            <li><a href="#iteration-helpers">Iteration Helpers</a></li>
+        </ul>
+    </nav>
+    <main id="content">
+        <section class="helper-category" id="conditional-helpers">
+            <h2>Conditional Helpers</h2>
+            <div class="helper" id="helper-if">
+                <h3>#if</h3>
+                <p>Conditionally render a block. If its argument returns false, undefined, null, "", 0, or [], Handlebars will not render the block.</p>
+                <pre><code>{{#if condition}}
+  This will be rendered if condition is true.
+{{/if}}</code></pre>
+                <span class="tag">Conditional</span>
+            </div>
+            <div class="helper" id="helper-unless">
+                <h3>#unless</h3>
+                <p>The inverse of the if helper. Its block will be rendered if the expression returns a falsy value.</p>
+                <pre><code>{{#unless condition}}
+  This will be rendered if condition is false.
+{{/unless}}</code></pre>
+                <span class="tag">Conditional</span>
+            </div>
+        </section>
+
+        <section class="helper-category" id="iteration-helpers">
+            <h2>Iteration Helpers</h2>
+            <div class="helper" id="helper-each">
+                <h3>#each</h3>
+                <p>Iterate over a list using the built-in each helper. Inside the block, you can use this to reference the element being iterated over.</p>
+                <pre><code>{{#each array}}
+  {{this}}
+{{/each}}</code></pre>
+                <span class="tag">Iteration</span>
+            </div>
+        </section>
+        <!-- Content will be dynamically loaded here -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
