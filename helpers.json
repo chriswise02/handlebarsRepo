@@ -4,13 +4,15 @@
             "title": "#if",
             "description": "Conditionally render a block. If its argument returns false, undefined, null, '', 0, or [], Handlebars will not render the block.",
             "example": "{{#if condition}}\n  This will be rendered if condition is true.\n{{/if}}",
-            "category": "Conditional"
+            "category": "Conditional",
+            "section": "conditional"
         },
         {
             "title": "#unless",
             "description": "The inverse of the if helper. Its block will be rendered if the expression returns a falsy value.",
             "example": "{{#unless condition}}\n  This will be rendered if condition is false.\n{{/unless}}",
-            "category": "Conditional"
+            "category": "Conditional",
+            "section": "conditional"
         }
     ],
     "iterationHelpers": [
@@ -18,7 +20,8 @@
             "title": "#each",
             "description": "Iterate over a list using the built-in each helper. Inside the block, you can use this to reference the element being iterated over.",
             "example": "{{#each array}}\n  {{this}}\n{{/each}}",
-            "category": "Iteration"
+            "category": "Iteration",
+            "section": "iteration"
         }
     ],
     "mathHelpers": [
@@ -26,115 +29,164 @@
             "title": "Display a Number as Currency",
             "description": "Formats a number as currency based on the user's locale.",
             "example": "{{formatCurrency number}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Display a Number as a Percentage",
             "description": "Converts a number to a percentage format.",
             "example": "{{formatPercentage number}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Specify Maximum Decimal Places",
             "description": "Limits the number of decimal places displayed.",
             "example": "{{formatNumber number maximumFractionDigits=2}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Specify Minimum Decimal Places",
             "description": "Ensures a minimum number of decimal places are shown.",
             "example": "{{formatNumber number minimumFractionDigits=2}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Round a Number Up",
             "description": "Rounds a number up, with options for rounding away from zero or toward positive infinity.",
             "example": "{{ceil number}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Round a Number Down",
             "description": "Rounds a number down, with options for rounding toward zero or toward negative infinity.",
             "example": "{{floor number}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Round to Nearest Neighbor",
             "description": "Rounds a number to its nearest neighbor, with options for rounding to the nearest even number, up, or down.",
             "example": "{{round number}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Make Long Numbers Easier to Read",
             "description": "Adds commas to long numbers for better readability.",
             "example": "{{formatNumber number}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Specify Custom Number Format",
             "description": "Applies a custom format to a number.",
             "example": "{{formatNumber number style='currency' currency='USD'}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Add Two Numbers",
             "description": "Adds two numbers together.",
             "example": "{{add number1 number2}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Subtract One Number from Another",
             "description": "Subtracts one number from another.",
             "example": "{{subtract number1 number2}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Multiply Two Numbers",
             "description": "Multiplies two numbers.",
             "example": "{{multiply number1 number2}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Divide One Number by Another",
             "description": "Divides one number by another.",
             "example": "{{divide number1 number2}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Display Remainder After Division",
             "description": "Shows the remainder after dividing one number by another.",
             "example": "{{modulo number1 number2}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Check if One Number Equals Another",
             "description": "Checks if two numbers are equal.",
             "example": "{{eq number1 number2}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Check if One Number is Greater Than Another",
             "description": "Determines if one number is greater than another.",
             "example": "{{gt number1 number2}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Check if One Number is Greater Than or Equal to Another",
             "description": "Checks if one number is greater than or equal to another.",
             "example": "{{gte number1 number2}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Check if One Number is Less Than Another",
             "description": "Determines if one number is less than another.",
             "example": "{{lt number1 number2}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
         },
         {
             "title": "Check if One Number is Less Than or Equal to Another",
             "description": "Checks if one number is less than or equal to another.",
             "example": "{{lte number1 number2}}",
-            "category": "Math Helpers"
+            "category": "Math Helpers",
+            "section": "mathHelpers"
+        }
+    ],
+    "textHelpers": [
+        {
+            "title": "replace",
+            "description": "Finds and replaces all occurrences of one string with a different string.",
+            "example": "{{replace timeOfYear 'dog' 'cat'}}",
+            "category": "Text Helpers",
+            "section": "textHelpers"
+        },
+        {
+            "title": "abbreviate",
+            "description": "Shortens a string to a specified length and adds an ellipsis (...).",
+            "example": "{{abbreviate iceCreamFlavor 6}}",
+            "category": "Text Helpers",
+            "section": "textHelpers"
+        },
+        {
+            "title": "center",
+            "description": "Adds a series of specified characters to each side of a word or phrase to add padding around the text and center it.",
+            "example": "{{center greeting 20 '-'}}",
+            "category": "Text Helpers",
+            "section": "textHelpers"
+        },
+        {
+            "title": "slugify",
+            "description": "Lowercases a string, removes non-word characters (numbers, underscores, and apostrophes), strips leading and trailing spaces, and converts spaces to hyphens.",
+            "example": "{{slugify itemName}}",
+            "category": "Text Helpers",
+            "section": "textHelpers"
         }
     ]
 }

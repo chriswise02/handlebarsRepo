@@ -2,6 +2,9 @@
 
 This project is a simple web application using Handlebars.js for templating.
 
+Visit here:
+https://chriswise02.github.io/handlebarsRepo/
+
 ## Project Structure
 
 - `index.html`: The main HTML file.
