@@ -14,7 +14,7 @@ document.getElementById('search').addEventListener('input', function() {
 });
 
 Promise.all([
-    fetch('categories.json').then(response => response.json()),
+    fetch('sections.json').then(response => response.json()),
     fetch('helpers.json').then(response => response.json())
 ])
 .then(([categoriesData, helpersData]) => {
